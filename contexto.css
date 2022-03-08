@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.phone {
+  position: relative;
+  border: 8px solid black;
+  height: 600px;
+  width: 300px;
+  border-radius: 40px;
+  background: #ccefff;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.layer-1 {
+  position: absolute;
+  z-index: 1;
+  height: 450px;
+  width: 80px;
+  background: white;
+  bottom: 0;
+  right: 60px;
+}
+
+.layer-2 {
+  position: absolute;
+  z-index: 2;
+  height: 450px;
+  width: 80px;
+  background: white;
+  bottom: 0;
+  left: 60px;
+}
+
+.layer-3 {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 220px;
+  height: 400px;
+  background: maroon;
+  bottom: 0;
+}
+
+.layer-4 {
+  position: absolute;
+  z-index: 4;
+}
+
+.layer-5 {
+  position: absolute;
+  z-index: 5;
+}
+
+.layer-6 {
+  position: absolute;
+  z-index: 6;
+}
+
+.layer-7 {
+  position: absolute;
+  z-index: 7;
+}
+
+.layer-8 {
+  position: absolute;
+  z-index: 8;
+}
+
+.layer-9 {
+  position: absolute;
+  z-index: 9;
+}
+
+.layer-10 {
+  position: absolute;
+  z-index: 10;
+}
