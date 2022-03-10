@@ -170,8 +170,41 @@ body {
   width: 4px;
   height: 4px;
   top: 15px;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes blink {
+  0% {
+    height: 4px;
+  }
+  5% {
+    height: 1px;
+    -webkit-transform: translate(0px, 2px);
+            transform: translate(0px, 2px);
+  }
+  10% {
+    height: 4px;
+  }
+}
+
+@keyframes blink {
+  0% {
+    height: 4px;
+  }
+  5% {
+    height: 1px;
+    -webkit-transform: translate(0px, 2px);
+            transform: translate(0px, 2px);
+  }
+  10% {
+    height: 4px;
+  }
+}
 .head__eye--left {
   left: 30px;
 }
