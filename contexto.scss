@@ -23,7 +23,6 @@ body
     z-index: 1;
     height: 450px;
     width: 80px;
-    background: palegreen;
     bottom: 0;
     right: 60px;
 }
@@ -33,7 +32,6 @@ body
     z-index: 2;
     height: 450px;
     width: 80px;
-    background: white;
     bottom: 0;
     left: 60px;
 }
@@ -53,7 +51,6 @@ body
 {
     position: absolute;
     z-index: 4;
-    background: white;
     bottom: 0;
     height: 350px;
     left: 15px;
@@ -63,7 +60,7 @@ body
 {
     position: absolute;
     z-index: 5;
-    background: papayawhip;
+    background: maroon;
     bottom: 0;
     height: 300px;
     width: 200px;
@@ -72,7 +69,6 @@ body
 {
     position: absolute;
     z-index: 6;
-    background: white;
     bottom: 0;
     height: 250px;
     right: 30px;
@@ -82,7 +78,7 @@ body
 {
     position: absolute;
     z-index: 7;
-    background: pink;
+    background: maroon;
     bottom: 0;
     height: 200px;
     right: 0;
@@ -92,7 +88,6 @@ body
 {
     position: absolute;
     z-index: 8;
-    background: papayawhip;
     bottom: 0;
     height: 120px;
     left: 0;
@@ -104,7 +99,6 @@ body
 {
     position: absolute;
     z-index: 9;
-    background: white;
     bottom: 0;
     height: 100px;
     width: 120px;
@@ -113,7 +107,6 @@ body
 {
     position: absolute;
     z-index: 10;
-    background: pink;
     bottom: 0;
     height: 100px;
     right: 0;
@@ -191,4 +184,111 @@ body
 .head__eye--right
 {
     right: 30px;
+}
+
+
+
+// SECCION WALL
+
+
+.lawn 
+{
+    background: green;
+    width: 100%;
+    height: 10px;
+}
+.land 
+{
+    background: linear-gradient(135deg, green 25%, transparent 25%) -50px 0, linear-gradient(-135deg, green 25%, transparent 25%) -50px 0, linear-gradient(45deg, brown 25%, transparent 25%), linear-gradient(-45deg, transparent 25%, brown 25%);
+    background-size: 33px 30px;
+    height: 30px;
+    width: 100%;
+}
+
+
+
+// SECCION LAWN
+
+
+.layer-8__left-lawn 
+{
+    background: green;
+    border-radius: 40px 40px 0 0;
+    bottom: 0;
+    display: inline-block;
+    height: 70%;
+    left: 0;
+    position: absolute;
+    width: 80px;
+}
+.layer-8__center-lawn 
+{
+    background: green;
+    border-radius: 40px 40px 0 0;
+    bottom: 0;
+    display: inline-block;
+    height: 100%;
+    left: 60px;
+    position: absolute;
+    width: 80px;
+}
+.layer-8__right-lawn 
+{
+    background: green;
+    border-radius: 40px 40px 0 0;
+    bottom: 0;
+    display: inline-block;
+    height: 80%;
+    left: 130px;
+    position: absolute;
+    width: 80px;
+}
+
+
+
+
+// SECCION CLOUD
+
+
+.layer-9__left-cloud 
+{
+    background: white;
+    border-radius: 40px 40px 0 0;
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 80px;
+}
+.layer-9__right-cloud 
+{
+    background: white;
+    border-radius: 0 40px 30px 0;
+    bottom: 0;
+    display: inline-block;
+    height: 60%;
+    left: 80px;
+    position: absolute;
+    width: 40px;
+}
+.layer-10__left-cloud 
+{
+    background: white;
+    border-radius: 40px 0 0 30px;
+    bottom: 0;
+    display: inline-block;
+    height: 60%;
+    right: 80px;
+    position: absolute;
+    width: 40px;
+}
+.layer-10__right-cloud
+{
+    background: white;
+    border-radius: 40px 40px 0 0;
+    display: inline-block;
+    height: 100%;
+    right: 0px;
+    position: absolute;
+    width: 80px;
 }
