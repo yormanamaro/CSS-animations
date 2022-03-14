@@ -6,6 +6,7 @@ body
     width: 100%;
     display: grid;
     place-items: center;
+    counter-reset: score;
 }
 .phone
 {
@@ -20,12 +21,34 @@ body
 .layer-1
 {
     position: absolute;
-    z-index: 1;
     height: 450px;
     width: 80px;
     bottom: 0;
     right: 60px;
+
+    animation-name: layer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
+
+@keyframes layer 
+{
+    0%
+    {
+        bottom: 0;
+    }
+    25%
+    {
+        bottom: -80px;
+    }
+    100%
+    {
+        bottom: 0;
+    }
+}
+
+
 .layer-2
 {
     position: absolute;
@@ -34,6 +57,11 @@ body
     width: 80px;
     bottom: 0;
     left: 60px;
+
+    animation-name: layer;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 .layer-3
 {
@@ -55,6 +83,11 @@ body
     height: 350px;
     left: 15px;
     width: 80px;
+
+    animation-name: layer;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 .layer-5
 {
@@ -73,6 +106,11 @@ body
     height: 250px;
     right: 30px;
     width: 80px;
+
+    animation-name: layer;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 .layer-7
 {
@@ -312,4 +350,54 @@ body
     right: 0px;
     position: absolute;
     width: 80px;
+}
+
+
+
+
+.title
+{
+    display: flex;
+    justify-content: center;
+    margin: 45px 0 10px;
+}
+.title img
+{
+    width: 60%;
+}
+.score
+{
+    color: brown;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+
+// VIDEO GAME MECHANICS
+
+
+.score::after
+{
+    content: counter(score);
+}
+input[type=checkbox] {
+    appearance: none;
+    cursor: pointer;
+    height: 50px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 80px;
+    z-index: 2;
+}
+input[type=checkbox] :focus 
+{
+    appearance: none;
+    outline: none;
+}
+input:checked
+{
+    counter-increment: score;
 }
